@@ -1,0 +1,25 @@
+# Robots.txt for TyneWear TV Mounting
+
+# Allow all search engine bots to crawl and index the entire site except specific directories
+User-agent: *
+Disallow: /private/          # Block private or admin sections
+Disallow: /admin/            # Block the admin section
+Disallow: /checkout/         # Block checkout page (if applicable, to avoid indexing unnecessary steps)
+Disallow: /cart/             # Block shopping cart pages from being indexed
+Disallow: /account/          # Block user account pages
+Disallow: /thank-you/        # Block thank you or confirmation pages
+
+# Allow all bots to index key pages like the homepage, service pages, and blog
+Allow: /                    # Allow the homepage to be indexed
+Allow: /services/            # Allow TV mounting service pages to be indexed
+Allow: /quote/               # Allow quote request page to be indexed
+Allow: /about/               # Allow about page to be indexed
+Allow: /blog/                # Allow the blog section to be indexed
+Allow: /contact/             # Allow the contact page to be indexed
+
+# Specific instructions for Googlebot (Google search engine bot)
+User-agent: Googlebot
+Disallow: /no-google/        # Disallow specific directory for Googlebot if needed
+
+# Sitemap file location
+Sitemap: https://www.TyneWear TV Mounting.co.uk/sitemap.xml
