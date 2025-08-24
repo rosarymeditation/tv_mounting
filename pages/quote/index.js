@@ -1,16 +1,7 @@
 import { useState } from "react";
 import Navbar from "../../components/navbar";
 import Head from "next/head";
-import {
-  Button,
-  Label,
-  TextInput,
-  Textarea,
-  Alert,
-  Spinner,
-  Select,
-  Radio,
-} from "flowbite-react";
+
 import { MailOpenIcon } from "@heroicons/react/solid";
 import { PhoneIcon } from "@heroicons/react/outline";
 

@@ -1,12 +1,10 @@
 import { ThemeProvider } from "next-themes";
 import "../css/tailwind.css";
-import { Flowbite } from "flowbite-react";
+
 function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider attribute="class">
-      <Flowbite>
-        <Component {...pageProps} />
-      </Flowbite>
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
